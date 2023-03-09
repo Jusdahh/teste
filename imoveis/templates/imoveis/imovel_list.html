@@ -1,0 +1,24 @@
+<body>
+    <h1>Imóveis</h1>
+    <ul>
+        <form method="get">
+
+        </form>
+
+        <table class="table">
+
+            <tr>
+                <th>Nome</th>
+                <th>Preço</th>
+
+            </tr>
+
+            {% for imovel in object_list %}
+            <tr>
+                <td>{{ imovel.nome }}</td>
+                <td>{{ imovel.preco }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </ul>
+</body>
